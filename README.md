@@ -174,7 +174,7 @@ with other programmers if you are trying to make the switch.
 		</tr>
 		<tr>
 			<td>7.1</td>
-			<td>TBD</td>
+			<td>Access Control</td>
 		</tr>
 		<tr>
 			<td>7.2</td>
@@ -185,7 +185,7 @@ with other programmers if you are trying to make the switch.
 		</tr>
 		<tr>
 			<td>8.1</td>
-			<td>TBD</td>
+			<td>Capstone</td>
 		</tr>
 		<tr>
 			<td>8.2</td>
