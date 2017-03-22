@@ -9,19 +9,24 @@ stand-up a restful api for others to consume the data we stored.
 
 Technologies we will use throughout the course to do this:
 
-- javascript: [javascript?](https://www.javascript.com/), [mdn](https://developer.mozilla.org/en-US/docs/Web/JavaScript), [eloquentjs](http://eloquentjavascript.net/)
+- javascript: [mdn](https://developer.mozilla.org/en-US/docs/Web/JavaScript), [eloquentjs](http://eloquentjavascript.net/)
 - bash: [bash](https://www.gnu.org/software/bash/), [command line](http://linuxcommand.org/tlcl.php)
-- [node](https://nodejs.org/en/)
-- [mongodb](https://www.mongodb.com/)
-- [html](https://developer.mozilla.org/en-US/docs/Web/HTML)
-- [css](https://developer.mozilla.org/en-US/docs/Web/CSS)
-- [git](http://rogerdudler.github.io/git-guide/)
+- node.js: [node](https://nodejs.org/en/)
+- MongoDB: [mongodb](https://www.mongodb.com/)
+- HTML: [mdn](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- CSS: [mdn](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- Git: [github](http://rogerdudler.github.io/git-guide/)
 
 Frameworks we will probably use (frameworks move pretty fast, a new one might
 come out that we may like more):
 
 - [lodash](https://lodash.com/)
 - [mongoose](http://mongoosejs.com/)
+- [restify](http://restify.com/)
+- [angular](https://angularjs.org/)
+
+Frameworks we might be using
+
 - [express](http://expressjs.com/)
 - [request](https://github.com/request/request)
 - [cheerio](https://github.com/cheeriojs/cheerio)
@@ -35,8 +40,8 @@ come out that we may like more):
 
 ### Communication
 
-- [Slack Channel](https://okcokcoders.slack.com), note on slack the previous course is
-  on there, but I made a private summer session channel.
+- [Slack Channel](https://okcokcoders.slack.com), note on slack the previous courses are
+  on there, but we have made a new spring2017 channel just for us.
 - Email: okcoders@gmail.com
 
 ### Expectations:
@@ -65,38 +70,20 @@ see a folder called example/ in there I will stick anything I write during the
 class, which includes answers to any in class exercises we do.
 
 Homework is setup by week, and you can find the homework in the exercises
-folder. I feel doing homework between Tuesday and Thursday to be a little
-onerous, so my expectation is that you are doing the homework for each week over
-the weekend.
+folder. Because simply doing the work weekly will not provide adiquate experience
+to become proficient at these skills we are providing an opportunity to study
+with other students, former instructors, previous OKCoder graduates and myself on 
+Tuesdays in the evening.  Attending these "office hours" is encouraged.
 
 Eventually we will start to have a lot of code written and we will want to build
 on top of that. I will have some kind of project folder where we will start to
-accumulate a coherent project. For example, we will have an express application
-that serves from our mongo db, and we will have a scraper that is scheduled to
-scrape from some site of our choosing.
+accumulate a coherent project. For example, we will have an restify application
+that serves from our mongo db.
 
 I do enjoy questions during class. There is a ton of material/resources on the
 internet one can use to learn to program, but none of it is interactive. My hope
 is this course is a place you can ask questions and get some human interaction
 with other programmers if you are trying to make the switch.
-
-### Sites we could scrape
-
-- [County Assessor](http://www.oklahomacounty.org/assessor/SearchMethod.htm)
-- [IMDB](http://www.imdb.com/), [someone already did what we will be doing](http://www.omdbapi.com/)
-- [Pitchfork](http://pitchfork.com/) (my favorite website)
-- [Oklahoma](https://www.ok.gov/)
-- [Netflix](https://www.netflix.com/), because they removed their public api
-
-### Sites we wouldn't need to scrape
-
-- [Twitter](https://dev.twitter.com/overview/documentation)
-- [Wikipedia](https://www.mediawiki.org/wiki/API:Main_page)
-- [Github](https://api.github.com/)
-- [Goodreads](https://www.goodreads.com/api)
-- [Spotify](https://developer.spotify.com/web-api/migration-guide/)
-- [Worldbank](http://data.worldbank.org/developers)
-- [Weather Underground](https://www.wunderground.com/weather/api/)
 
 ## Syllabus
 
@@ -104,32 +91,34 @@ with other programmers if you are trying to make the switch.
 	<thead>
 		<tr>
 			<th>Week 1</th>
-			<th>First Hour</th>
-			<th>Second Hour</th>
+            <th colspan="2" align="left">Welcome to the Jungle</th>
 		</tr>
 	</thead>
 	<tbody>
-		<tr>
+        <tr>
 			<td>1.1</td>
 			<td>Class Introduction</td>
-			<td>Javascript: Introduction</td>
+			<td>Bash: Introduction</td>
 		</tr>
+		
 		<tr>
 			<td>1.2</td>
-			<td>Javascript: Variables and Values</td>
-			<td>Bash: Introduction</td>
+            <td>Git: Introduction</td>
+			<td>Javascript: Introduction</td>
 		</tr>
 
 		<tr>
 			<th colspan="3" align="left">Week 2</th>
 		</tr>
+		
 		<tr>
 			<td>2.1</td>
+			<td>Javascript: Variables and Values</td>
 			<td>Javascript: Program Structure</td>
 		</tr>
 		<tr>
 			<td>2.2</td>
-			<td>Git</td>
+
 			<td>Javascript: Arrays and Objects</td>
 		</tr>
 
@@ -142,7 +131,7 @@ with other programmers if you are trying to make the switch.
 		</tr>
 		<tr>
 			<td>3.2</td>
-                        <td>Node: Introduction</td>
+            <td>Node: Introduction</td>
 		</tr>
 		<tr>
 			<th colspan="3" align="left">Week 4</th>
@@ -162,11 +151,11 @@ with other programmers if you are trying to make the switch.
 		<tr>
 			<td>5.1</td>
 			<td>Web Fundamentals: http, html, css, RESTful</td>
-			<td>Express (node.js framework): Introduction</td>
+			<td>Restify (node.js framework): Introduction</td>
 		</tr>
 		<tr>
 			<td>5.2</td>
-			<td>Express (node.js framework): Intermediate</td>
+			<td>Restify (node.js framework): Intermediate</td>
 		</tr>
 		<tr>
 			<th colspan="3" align="left">Week 6</th>
@@ -185,25 +174,22 @@ with other programmers if you are trying to make the switch.
 		</tr>
 		<tr>
 			<td>7.1</td>
-			<td>Cheerio: Introduction</td>
-			<td>Oklahoma County Assessor: Site Overview</td>
+			<td>TBD</td>
 		</tr>
 		<tr>
 			<td>7.2</td>
-			<td>Oklahoma County Assessor (Capstone): Scraping Pt. 1</td>
+			<td>TBD</td>
 		</tr>
 		<tr>
 			<th colspan="3" align="left">Week 8</th>
 		</tr>
 		<tr>
 			<td>8.1</td>
-			<td>Oklahoma County Assessor (Capstone): Scraping Pt. 2</td>
+			<td>TBD</td>
 		</tr>
 		<tr>
 			<td>8.2</td>
-			<td>Oklahoma County Assessor (Capstone): Scraping Pt. 3</td>
-			<td>Oklahoma County Assessor (Capstone): Api</td>
-			<td>Next Steps</td>
+			<td>TBD</td>
 		</tr>
 	</tbody>
 </table>
