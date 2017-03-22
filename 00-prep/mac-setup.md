@@ -48,3 +48,10 @@ Install Node.js: At the Terminal, type the following command and press return:
 brew install node
 ```
 
+## Install MongoDB
+
+At the Terminal, type the following command and press return:
+
+```
+brew install mongodb
+```

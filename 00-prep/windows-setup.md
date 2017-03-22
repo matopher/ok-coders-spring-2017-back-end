@@ -22,3 +22,9 @@ Windows does come with a built-in command prompt, but we will be using another T
 ## Install Node
 
 Install Node.js: [http://nodejs.org/](http://nodejs.org/).
+
+## Install MongoDB
+
+Follow the install/download instructions on this link:
+
+[MongoDB on Windows](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/)
