@@ -88,12 +88,10 @@ with other programmers if you are trying to make the switch.
 ## Syllabus
 
 <table>
-	<thead>
-		<tr>
+	<tbody>
+        <tr>
 			<th colspan="3" align="left">Week 1</th>
 		</tr>
-	</thead>
-	<tbody>
         <tr>
 			<td>1.1</td>
 			<td>Class Introduction</td>
@@ -117,7 +115,6 @@ with other programmers if you are trying to make the switch.
 		</tr>
 		<tr>
 			<td>2.2</td>
-
 			<td>Javascript: Arrays and Objects</td>
 		</tr>
 
