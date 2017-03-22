@@ -88,105 +88,103 @@ with other programmers if you are trying to make the switch.
 ## Syllabus
 
 <table>
-	<tbody>
-        <tr>
-			<th colspan="3" align="left">Week 1</th>
-		</tr>
-        <tr>
-			<td>1.1</td>
-			<td>Class Introduction</td>
-			<td>Bash: Introduction</td>
-		</tr>
-		
-		<tr>
-			<td>1.2</td>
-            <td>Git: Introduction</td>
-			<td>Javascript: Introduction</td>
-		</tr>
+<tr>
+    <th colspan="3" align="left">Week 1</th>
+</tr>
+<tr>
+    <td>1.1</td>
+    <td>Class Introduction</td>
+    <td>Bash: Introduction</td>
+</tr>
 
-		<tr>
-			<th colspan="3" align="left">Week 2</th>
-		</tr>
-		
-		<tr>
-			<td>2.1</td>
-			<td>Javascript: Variables and Values</td>
-			<td>Javascript: Program Structure</td>
-		</tr>
-		<tr>
-			<td>2.2</td>
-			<td>Javascript: Arrays and Objects</td>
-		</tr>
+<tr>
+    <td>1.2</td>
+    <td>Git: Introduction</td>
+    <td>Javascript: Introduction</td>
+</tr>
 
-		<tr>
-			<th colspan="3" align="left">Week 3</th>
-		</tr>
-		<tr>
-			<td>3.1</td>
-			<td>Javascript: Functions</td>
-		</tr>
-		<tr>
-			<td>3.2</td>
-            <td>Node: Introduction</td>
-		</tr>
-		<tr>
-			<th colspan="3" align="left">Week 4</th>
-		</tr>
-		<tr>
-			<td>4.1</td>
-			<td>Node: npm and require</td>
-			<td>Databases: Modeling and Introduction</td>
-		</tr>
-		<tr>
-			<td>4.2</td>
-			<td>Databases: MongoDB</td>
-		</tr>
-		<tr>
-			<th colspan="3" align="left">Week 5</th>
-		</tr>
-		<tr>
-			<td>5.1</td>
-			<td>Web Fundamentals: http, html, css, RESTful</td>
-			<td>Restify (node.js framework): Introduction</td>
-		</tr>
-		<tr>
-			<td>5.2</td>
-			<td>Restify (node.js framework): Intermediate</td>
-		</tr>
-		<tr>
-			<th colspan="3" align="left">Week 6</th>
-		</tr>
-		<tr>
-			<td>6.1</td>
-			<td>Mongoose: Introduction</td>
-		</tr>
-		<tr>
-			<td>6.2</td>
-			<td>Mongoose: Continued</td>
-			<td>Request: Http client</td>
-		</tr>
-		<tr>
-			<th colspan="3" align="left">Week 7</th>
-		</tr>
-		<tr>
-			<td>7.1</td>
-			<td>Access Control</td>
-		</tr>
-		<tr>
-			<td>7.2</td>
-			<td>TBD</td>
-		</tr>
-		<tr>
-			<th colspan="3" align="left">Week 8</th>
-		</tr>
-		<tr>
-			<td>8.1</td>
-			<td>Capstone</td>
-		</tr>
-		<tr>
-			<td>8.2</td>
-			<td>TBD</td>
-		</tr>
-	</tbody>
+<tr>
+    <th colspan="3" align="left">Week 2</th>
+</tr>
+
+<tr>
+    <td>2.1</td>
+    <td>Javascript: Variables and Values</td>
+    <td>Javascript: Program Structure</td>
+</tr>
+<tr>
+    <td>2.2</td>
+    <td>Javascript: Arrays and Objects</td>
+</tr>
+
+<tr>
+    <th colspan="3" align="left">Week 3</th>
+</tr>
+<tr>
+    <td>3.1</td>
+    <td>Javascript: Functions</td>
+</tr>
+<tr>
+    <td>3.2</td>
+    <td>Node: Introduction</td>
+</tr>
+<tr>
+    <th colspan="3" align="left">Week 4</th>
+</tr>
+<tr>
+    <td>4.1</td>
+    <td>Node: npm and require</td>
+    <td>Databases: Modeling and Introduction</td>
+</tr>
+<tr>
+    <td>4.2</td>
+    <td>Databases: MongoDB</td>
+</tr>
+<tr>
+    <th colspan="3" align="left">Week 5</th>
+</tr>
+<tr>
+    <td>5.1</td>
+    <td>Web Fundamentals: http, html, css, RESTful</td>
+    <td>Restify (node.js framework): Introduction</td>
+</tr>
+<tr>
+    <td>5.2</td>
+    <td>Restify (node.js framework): Intermediate</td>
+</tr>
+<tr>
+    <th colspan="3" align="left">Week 6</th>
+</tr>
+<tr>
+    <td>6.1</td>
+    <td>Mongoose: Introduction</td>
+</tr>
+<tr>
+    <td>6.2</td>
+    <td>Mongoose: Continued</td>
+    <td>Request: Http client</td>
+</tr>
+<tr>
+    <th colspan="3" align="left">Week 7</th>
+</tr>
+<tr>
+    <td>7.1</td>
+    <td>Access Control</td>
+</tr>
+<tr>
+    <td>7.2</td>
+    <td>TBD</td>
+</tr>
+<tr>
+    <th colspan="3" align="left">Week 8</th>
+</tr>
+<tr>
+    <td>8.1</td>
+    <td>Capstone</td>
+</tr>
+<tr>
+    <td>8.2</td>
+    <td>TBD</td>
+</tr>
 </table>
 
