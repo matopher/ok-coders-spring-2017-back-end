@@ -90,8 +90,7 @@ with other programmers if you are trying to make the switch.
 <table>
 	<thead>
 		<tr>
-			<th>Week 1</th>
-            <th colspan="2" align="left">Welcome to the Jungle</th>
+			<th colspan="3" align="left">Week 1</th>
 		</tr>
 	</thead>
 	<tbody>
