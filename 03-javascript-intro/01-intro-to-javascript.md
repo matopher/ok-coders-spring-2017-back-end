@@ -1,37 +1,20 @@
 JavaScript: Introduction
 ====
 
-JavaScript is a programming language first introduced in 1995 for use in dynamic
-web pages, or web pages that could respond to user actions and change their
-content. Since then javascript has been introduced into a number of
-environments. Most recently, [Node.js](http://nodejs.org/) has popularized
-server-side programming with javascript.
+JavaScript is a high-level, untyped, functional programming language created by Brendan Eich of Netscape in 10 days and first introduced in 1995 for use in dynamic web pages, or web pages that could respond to user actions and change their content.  Since then javascript has been introduced nto a number of environments. Most recently, [Node.js](http://nodejs.org/) has popularized server-side programming with javascript.
 
-Programming languages are a complex topic, and learning to program is difficult
-and requires practice. It will be frustrating at times. Programming languages
-are like languages, in so far as you type in something that looks like English
-and the computer manages to turn it into instructions that it understands. But
-programming languages are picky about their *syntax*, so the code must be just
-right in order to work.
+Programming languages are a complex topic, and learning to program is difficult and requires practice. It will be frustrating at times. Programming languages are like languages, in so far as you type in something that looks like English and the computer manages to turn it into instructions that it understands. But programming languages are picky about their *syntax*, so the code must be just right in order to work.
 
-The upcoming javascript chapters will focus on practical examples but will
-always discuss the syntax as well. Although javascript was originally designed
-for the browser, we will do most of our work in node.
+The upcoming javascript chapters will focus on practical examples but will always discuss the syntax as well. Although javascript was originally designed for the browser, we will do most of our work in node.
 
 ## Node or Chrome Console
 
-Node provides a *runtime* for javascript programs as well as access to system
-functionaliy (it utilizes the V8 Javascript engine just like Chrome).
-For now, that means we'll run our javascript programs using node.
-Type `node` at the console to bring up a REPL, or *read-evaluate-print-loop*
-Or, open the developer tools part of chrome and go to the console section:
+Node provides a *runtime* for javascript programs as well as access to system functionaliy (it utilizes the V8 Javascript engine just like Chrome).  For now, that means we'll run our javascript programs using node. Type `node` at the console to bring up a REPL, or *read-evaluate-print-loop* Or, open the developer tools part of chrome and go to the console section:
 
         $ node
 	>
 
-Notice that the prompt changes to a `>` which means that node is waiting for
-input from you. Node *evaluates* whatever you've typed when you press return,
-and then it print out the result:
+Notice that the prompt changes to a `>` which means that node is waiting for input from you. Node *evaluates* whatever you've typed when you press return, and then it print out the result:
 
         $ node
         > 5
@@ -40,62 +23,41 @@ and then it print out the result:
         10
 	>
 
-When node is finished evaluating your input, it returns you to the `>` prompt
-and waits for more. When you're finished and want to quit node, hold down the
-control key and press c: `^C`. You will need to press control-c twice.
+When node is finished evaluating your input, it returns you to the `>` prompt and waits for more. When you're finished and want to quit node, hold down the control key and press c: `^C`. You will need to press control-c twice.
 
 ## Data Types
 
-For us, the fundamental unit of a programming language will be data. If our
-programs do nothing else, they will work with data.
+For us, the fundamental unit of a programming language will be data. If our programs do nothing else, they will work with data.
 
-Data is not an abstract topic. *Numbers* for example are data. Try typing a
-number at the node prompt:
+Data is not an abstract topic. *Numbers* for example are data. Try typing a number at the node prompt:
 
         > 12
         12
 	>
 
-Node evaluates the number and prints the result, then it returns you to the
-prompt. The result of evaluating a number is just the number itself, in this
-case twelve.
+Node evaluates the number and prints the result, then it returns you to the prompt. The result of evaluating a number is just the number itself, in this case twelve.
 
-*Text* is also data. In programming languagaes, bits of text are called
-*strings*. In javascript, a string is represented by enclosing it in single or
-double quotes, like `"hello world"` or `'hello world'`. Try typing a string at
-the node prompt (for javascript, we will use single quotes):
+*Text* is also data. In programming languagaes, bits of text are called *strings*. In javascript, a string is represented by enclosing it in single or double quotes, like `"hello world"` or `'hello world'`. Try typing a string at the node prompt (for javascript, we will use single quotes):
 
         > "hello world"
         'hello world'
 	>
 
-Node evaluates the string and prints the result, then it returns you to the
-prompt. As with numbers, the result of evaluating a string is just the string
-itself.
+Node evaluates the string and prints the result, then it returns you to the prompt. As with numbers, the result of evaluating a string is just the string itself.
 
-There are other *types* of data. *Type* is a technical term. Data always have a
-type. A number is a type of data. Strings are a type of data. There are other
-types of data in javascript, for example, the *boolean* type.
+There are other *types* of data. *Type* is a technical term. Data always have a type. A number is a type of data. Strings are a type of data. There are other types of data in javascript, for example, the *boolean* type.
 
-Boolean data is always either `true` or `false`. True and false have special
-meaning in programming languages and are used in many circumstances. Try typing
-`true` into node:
+Boolean data is always either `true` or `false`. True and false have special meaning in programming languages and are used in many circumstances. Try typing `true` into node:
 
         > true
         true
 	>
 
-Node understands `true` and `false` because they are *keywords* in the language.
-They *mean* something. Notice that true just evaluates to true. Likewise, false
-evaluates to false. There are other types of data we'll learn about in future
-chapters.
+Node understands `true` and `false` because they are *keywords* in the language. They *mean* something. Notice that true just evaluates to true. Likewise, false evaluates to false. There are other types of data we'll learn about in future chapters.
 
 ## Mathematical Operations
 
-Typically we want to do something with our data. Another way of saying this is
-we want to *operate* on it. The most basic operation we can perform is
-mathematical. After all, computers were originally built to perform mathematical
-operations.
+Typically we want to do something with our data. Another way of saying this is we want to *operate* on it. The most basic operation we can perform is mathematical. After all, computers were originally built to perform mathematical operations.
 
 For example, you can add two numbers together:
 
@@ -103,13 +65,9 @@ For example, you can add two numbers together:
         24
 	>
 
-Node evaluates the entire mathematical operation as a single *expression*.
-Expression is also a technical term in programming. What is important to know
-for now is that an expression always has a result. We can see that `12+12` has a
-  result because node prints it out before returning to the prompt.
+Node evaluates the entire mathematical operation as a single *expression*. Expression is also a technical term in programming. What is important to know for now is that an expression always has a result. We can see that `12+12` has a   result because node prints it out before returning to the prompt.
 
-Javascript supports all of the standard mathematical operations such as
-addition, subtraction, multiplication and division using the following symbols:
+Javascript supports all of the standard mathematical operations such as addition, subtraction, multiplication and division using the following symbols:
 
 <table>
   <tr>
@@ -130,8 +88,7 @@ addition, subtraction, multiplication and division using the following symbols:
   </tr>
 </table>
 
-Note that programming languages often use the asterisk `*` for multiplication
-and `/` for division. Try multiplying two numbers in node:
+Note that programming languages often use the asterisk `*` for multiplication and `/` for division. Try multiplying two numbers in node:
 
         > 12 * 12
         144
@@ -139,17 +96,13 @@ and `/` for division. Try multiplying two numbers in node:
 
 Once again, node evaluates the mathematical operation and prints out the result.
 
-Combine mathematical operations into more complex expressions by putting more
-than one operation on a line:
+Combine mathematical operations into more complex expressions by putting more than one operation on a line:
 
         > 5 + 5 + 5
         15
 	>
 
-Combine and group mathematical operations with parenthesis, `( ... )`.
-Parenthesis are used more generally to group any expression in a programming
-language, not just mathematical ones, but it's easy to see what they do using
-math as an example:
+Combine and group mathematical operations with parenthesis, `( ... )`. Parenthesis are used more generally to group any expression in a programming language, not just mathematical ones, but it's easy to see what they do using math as an example:
 
         > 1 + 2 * 3
         7
