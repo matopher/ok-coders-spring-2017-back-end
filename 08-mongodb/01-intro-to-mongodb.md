@@ -113,6 +113,12 @@ As you interact with the database through the client application you'll see the 
 
 Recall from the previous chapter that the mongo database uses collections of documents to model data, rather than tables as SQL does. A collection is just a bunch of documents. Documents are really the data object we'll be interacting with, but when we create a document or otherwise modify it, we'll be doing that in the context of a collection.
 
+    SQL Structure |  MongoDB Structure
+    --------------|-------------------
+     database     |     database
+     table        |     collection
+     row          |     document
+
 Example collections might be `posts`, `users`, `comments` and so on in a blog application. Then each collection contains the data for particular posts, users and comments.
 
 Before we create collections we need to specify what database those collections will belong to. This is similar to SQL. A single mongo server can support many databases that are independent of one another. Let's fire up the mongo client, create a database and start adding data
@@ -154,6 +160,14 @@ Both databases and collections are created *lazily* in mongodb. A database won't
 ## CRUD
 
 Although mongodb supports a number of advanced database operations like geolocation based queries, mapreduce and sharding, we will focus on creating, retrieving, updating and deleting data, or the *CRUD* operations.
+
+    CRUD Operation | Command
+    ---------------|----------------
+      create       |   insert
+      read         |   find
+      update       |   update
+      delete       |   remove
+      
 
 The CRUD operators are all performed on the `db` object in the mongo client, and further on another object that targets the collection for the command. For example, if you want to work with documents in a `posts` collection, your commands will begin with `db.posts`. The commands will then be methods on this `db.posts` object.
 
