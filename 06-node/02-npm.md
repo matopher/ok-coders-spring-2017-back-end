@@ -47,32 +47,32 @@ Installing dependencies is simple. You just need its name. Install a new package
 
 	npm install package-name --save
 
-So for example to install the `underscore` package, type at the console:
+So for example to install the `lodash` package, type at the console:
 
-	$ npm install underscore --save
+	$ npm install lodash --save
 
-NPM adds the package to the `node_modules` folder in the current directory, creating it if necessary, and with the `--save` argument modifies the package.json file to list underscore as a dependency:
+NPM adds the package to the `node_modules` folder in the current directory, creating it if necessary, and with the `--save` argument modifies the package.json file to list lodash as a dependency:
 
 	$ ls
 	node_modules	package.json index.js
 	$ ls node_modules
-	underscore
+	lodash
 	$ cat package.json
 	{
 	  	"name": "npm-test",
 		...
 		"dependencies": {
-    		"underscore": "^1.6.0"
+    		"lodash": "^4.17.4"
   		}
 	}
 
-We could then use the `underscore` package from our "index.js" file by requiring it, as we've already seen with modules:
+We could then use the `lodash` package from our "index.js" file by requiring it, as we've already seen with modules:
 
-	var _ = require('underscore');
+	var _ = require('lodash');
 
 All packages behave like modules in node.
 
-And yes, we're actually assigning the result of `require` to an underscore `_` which is a legal variable name in javascript.
+And yes, we're actually assigning the result of `require` to an lodash `_` which is a legal variable name in javascript.
 
 **Installing the listed dependencies**
 

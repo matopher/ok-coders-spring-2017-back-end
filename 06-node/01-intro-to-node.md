@@ -263,6 +263,43 @@ Javascript programs run with a built-in event loop. An event loop handles and pr
 
 When a program registers a callback for events that may occur sometime in the future, node ensures the event loop continues to run while waiting for events to occur. If there is nothing for your program to do in the meantime no code will be executed, but as soon as an event does occur your callback code is run so that your program has the opportunity to respond to it. Your program will continue to run, waiting for events to occur, as long as you have callbacks registered for events.
 
+## Modules 
+
+[Modules](http://nodejs.org/api/modules.html)
+
+Modules are like self-contained objects that make functions and data available to other parts of your program.
+
+Use the `exports` object inside a module to make a function available:
+
+```js
+var PI = Math.PI;
+
+exports.area = function (r) {
+  return PI * r * r;
+};
+
+exports.circumference = function (r) {
+  return 2 * PI * r;
+};
+```
+
+Alternatively use the `module.exports` variable and assign it an object that includes all your functions in one go:
+
+```js
+var PI = Math.PI;
+
+module.exports = {
+	area: function (r) {
+		return PI * r * r;
+	},
+	circumference: function (r) {
+		return 2 * PI * r;
+	}
+};
+```
+
+The two approaches produce the same result.
+
 ## Creating Your Own Modules
 
 So far we've been building small programs, a function here, some data there, nothing very complex, and we've been keeping all of a program's code in a single file. Once our program grows beyond a few hundred lines of code it is a good idea to organize related bits and keep them in separate files. Node makes it possible to do this using the same module pattern we learned above.
@@ -329,40 +366,9 @@ Note that the exported functions are available under the property name you use o
 
 ## Important APIs
 
-[Modules](http://nodejs.org/api/modules.html)
+Application Programming Interfaces (APIs) in node are organized into modules. Here are some important included modules with node.
 
-Application Programming Interfaces (APIs) in node are organized into modules. Modules are like self-contained objects that make functions and data available to other parts of your program.
-
-Use the `exports` object inside a module to make a function available:
-
-```js
-var PI = Math.PI;
-
-exports.area = function (r) {
-  return PI * r * r;
-};
-
-exports.circumference = function (r) {
-  return 2 * PI * r;
-};
-```
-
-Alternatively use the `module.exports` variable and assign it an object that includes all your functions in one go:
-
-```js
-var PI = Math.PI;
-
-module.exports = {
-	area: function (r) {
-		return PI * r * r;
-	},
-	circumference: function (r) {
-		return 2 * PI * r;
-	}
-};
-```
-
-The two approaches produce the same result.
+### File Access with File System (fs)
 
 [File System](http://nodejs.org/api/fs.html)
 
@@ -380,6 +386,8 @@ fs.readFile('file.txt', function(err, data) {
 });
 ```
 
+### File System Pathing with Path (path)
+
 [Path](http://nodejs.org/api/path.html)
 
 Construct paths and normalize them in accordance with operating system requirements.
@@ -392,6 +400,10 @@ var path = require('path');
 var filepath = path.join('examples','about.txt');
 // filepath is 'examples/about.txt'
 ```
+
+### Web Server Requests with HTTP (http)
+
+The most common usage for node is web applications and services.  As such an http server is one of the built-in modules distributed with node.
 
 [HTTP](http://nodejs.org/api/http.html)
 
