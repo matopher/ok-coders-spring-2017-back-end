@@ -65,10 +65,19 @@ server.listen(8088, function() {
 
 Setting up the server is simple because the createServer API takes the same arguments as the http.Server.listen we used in last weeks node example.
 
-Now lets specify some named parameters we want to grab.
+## Advanced Routing
+
+Often we'll want to respond to similar but slightly different requests with the same code, or we'll want to be able to respond to requests whose resources we can't identify in advance.
+
+This happens when we want the same code to run for many resources of the same type that are stored in a database but have unique identifiers. For example, it would be useful if the following paths:
+
+	/people/zack
+	/people/bobby
+
+We can capture the second part of our path and use it as a parameter in our request.
 
 ```
-server.get('/hello/:name', function (req, res, next) {
+server.get('/people/:name', function (req, res, next) {
   res.send('hello ' + req.params.name);
   next();
 });
@@ -90,3 +99,4 @@ Couple things to note.
 
 1. Calling next() is done to run the next handler in the chain and is generally best practice unless you want to short-circuit the handler chain in which case next(false) will work.
 2. You can use Regular Expressions in your routes as well.
+3. There is a server.use that takes function(req, res, next) handlers and is run BEFORE all other routes.  It is useful for performing actions on all incoming routes before they are processed by other handlers.
