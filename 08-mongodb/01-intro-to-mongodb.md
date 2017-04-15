@@ -173,7 +173,7 @@ The CRUD operators are all performed on the `db` object in the mongo client, and
 
 If you want to make changes to the comments collection, use `db.comments`. `db` here always refers to the currently used database.
 
-## Create
+### Create
 
 Let's create a few blog posts then. Target the `db.posts` object. The command we'll use is `insert`, and we pass it a normal javascript object:
 
@@ -244,7 +244,7 @@ Again confirm that the posts were added with the `find` command:
 
 Sure enough, each post was added and assigned a unique object ID.
 
-## Retrieve
+### Retrieve
 
 Retrieving, or *querying*, documents in mongodb is straightforward. We'll use the `find` command as we've already seen. Without additional arguments the `find` command retrieves all the documents in a collection. With additional arguments it behaves like the `WHERE` clause in a SQL statement. MongoDB provides it own named parameters attached to javascript objects to control the querying.
 
@@ -349,7 +349,7 @@ Use the `limit()` and `skip()` commands to specify the range of results you'd li
 
 Cursor methods like this are often used to page through a long list of items.
 
-## Update
+### Update
 
 Updating is a little stranger in mongo. An `update` command allows us to target a subset of documents in a collection and then make a number of kinds of changes to those documents.
 
@@ -411,7 +411,7 @@ We used the special `$set` parameter to specify what kind of update we want to e
 
 Note that it is possible to update more than one object simultaneously. The first argument to the `update` command is an object that works just like the query object in the `find` command. If it matches more than one document in the collection then all the matched documents will be updated.
 
-## Delete
+### Delete
 
 Deleting is straightforward. Use the `remove` command. Like the `find` and `update` commands it takes a query object as its first parameter. The command then deletes any object that matches that query.
 

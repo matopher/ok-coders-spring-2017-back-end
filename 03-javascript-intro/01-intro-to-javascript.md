@@ -10,7 +10,7 @@ The upcoming javascript chapters will focus on practical examples but will alway
 ## Node or Chrome Console
 
 Node provides a *runtime* for javascript programs as well as access to system functionaliy (it utilizes the V8 Javascript engine just like Chrome).  For now, that means we'll run our javascript programs using node. Type `node` at the console to bring up a REPL, or *read-evaluate-print-loop* Or, open the developer tools part of chrome and go to the console section:
-
+  
         $ node
 	>
 

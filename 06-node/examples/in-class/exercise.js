@@ -5,7 +5,7 @@ function higherOrder(name, callback) {
 function lowerAndSub(str) {
   return str.toLowerCase().substring(0, 2)
 }
-
+// http://jsonstudio.com/resources/
 var name = 'Zach'
 var upperAndSub = function(str) {
   return str.toUpperCase().substring(0, 3)
